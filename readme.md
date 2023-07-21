@@ -8,7 +8,7 @@ A locally running development environment with a quick setup using docker-compos
 
 Install steps here: [Docker](https://docs.docker.com/get-docker/).
 
-The new version of Docker desktop includes docker-compose V2, so you don't have to install it separately. This project works with both versions of docker-compose, but uses V2 syntax in the examples.
+The new version of Docker Desktop includes docker-compose V2, so you don't have to install it separately. This project works with both versions of docker-compose, but uses V2 syntax in the examples.
 
 ### 2. Start the services
 
@@ -27,6 +27,16 @@ curl http://localhost:9200
 ```
 
 Open the dashboard in your browser: [OpenSearch Dashboard](http://localhost:5601)
+
+## Clean up
+
+Use my cleanup script to remove all containers, images, and volumes
+
+```bash
+make clean
+```
+
+Alternatively, you can clean up manually by entering the commands from the [Makefile](./Makefile).
 
 ## References
 
